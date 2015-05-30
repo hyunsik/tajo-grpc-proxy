@@ -4,7 +4,7 @@ This is GRpc proxy server for Apache Tajo. Because hadoop depends on protobuf 2.
 have higher protobuf version (>= 2.6.1), required for grpc. This proxy server allows users to directly use grpc 
 to access Tajo clusters.
 
-# How to build and launch
+# Building
 
 *Prerequisites*
  * maven 3.0 or higher
@@ -13,7 +13,14 @@ to access Tajo clusters.
 ```
 git clone https://github.com/hyunsik/tajo-grpc-proxy.git
 ./build.sh
-./start-proxy.sh
+```
+
+# Launching
+```
+./start-proxy.sh 
+usage: ./tajo-grpc-proxy [server address] [listen address]
+
+./start-proxy.sh localhost:26002 localhost:28002
 ```
 
 # See Also
