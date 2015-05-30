@@ -1,4 +1,4 @@
-package org.diveintodata.gproxy; /**
+/**
  * Copyright 2015 Hyunsik Choi (hyunsik.choi@gmail.com) All Rights Reserved
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,6 +13,8 @@ package org.diveintodata.gproxy; /**
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
+package org.diveintodata.gproxy;
 
 import com.google.protobuf.ServiceException;
 import io.grpc.ServerImpl;

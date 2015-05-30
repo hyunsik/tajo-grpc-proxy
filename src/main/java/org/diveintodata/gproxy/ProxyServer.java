@@ -1,7 +1,3 @@
-package org.diveintodata.gproxy;
-
-import java.net.InetSocketAddress;
-
 /**
  * Copyright 2015 Hyunsik Choi (hyunsik.choi@gmail.com) All Rights Reserved
  *
@@ -17,6 +13,10 @@ import java.net.InetSocketAddress;
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
+package org.diveintodata.gproxy;
+
+import java.net.InetSocketAddress;
 
 public class ProxyServer {
   private static ClientProxy clientProxy;
