@@ -23,7 +23,7 @@ git clone https://github.com/hyunsik/tajo-grpc-proxy.git
 # Launching
 ```
 ./start-proxy.sh 
-usage: ./tajo-grpc-proxy [server address] [listen address]
+usage: ./start-proxy.sh [server address] [listen address]
 
 ./start-proxy.sh localhost:26002 localhost:28002
 ```
