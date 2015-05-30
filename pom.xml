@@ -4,7 +4,7 @@
   <groupId>org.diveintodata</groupId>
   <artifactId>gproxy</artifactId>
   <packaging>jar</packaging>
-  <version>0.2.0-SNAPSHOT</version>
+  <version>0.3.0-SNAPSHOT</version>
   <name>Tajo Grpc Proxy</name>
   <url>https://github.com/hyunsik/tajo-grpc-proxy</url>
 
