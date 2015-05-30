@@ -23,7 +23,7 @@ public class ProxyServer {
 
   public static void run(String [] args) throws Throwable {
     if (args.length < 2) {
-      System.err.println("usage: ./tajo-grpc-proxy [server address] [listen address]");
+      System.err.println("usage: ./start-proxy.sh [server address] [listen address]");
       System.exit(-1);
     }
 
