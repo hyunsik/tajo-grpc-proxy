@@ -1,4 +1,4 @@
-/**
+package org.diveintodata.gproxy; /**
  * Copyright 2015 Hyunsik Choi (hyunsik.choi@gmail.com) All Rights Reserved
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -62,8 +62,8 @@ public class ClientProxy implements TajoMasterClientProtocolServiceGrpc.TajoMast
         TajoMasterClientProtocolServiceGrpc.bindService(this)
     ).build();
     server.start();
-    System.out.println("Proxy starts up (" + displayAddress(lietenAddr) + " <=> " + displayAddress(serverAddr) +
-        " (server)");
+    System.out.println("Proxy starts up (" +
+        displayAddress(lietenAddr) + "[listen] <=> " + displayAddress(serverAddr) + " [server])");
 
     Runtime.getRuntime().addShutdownHook(new Thread() {
       @Override
@@ -72,9 +72,9 @@ public class ClientProxy implements TajoMasterClientProtocolServiceGrpc.TajoMast
         ClientProxy.this.client.close();
 
         // Use stderr here since the logger may have been reset by its JVM shutdown hook.
-        System.err.println("*** shutting down gRPC server since JVM is shutting down");
+        System.err.println("* Shutting down gRPC server since JVM is shutting down");
         ClientProxy.this.stop();
-        System.err.println("*** server shut down");
+        System.err.println("* server shut down");
       }
     });
 
